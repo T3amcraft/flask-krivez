@@ -1,0 +1,79 @@
+.map-with-text {
+    text-align: justify;
+    width: 50%;
+}
+
+.map-with-text img {
+    display: block;
+}
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 62.5px;
+    height: 62.5px;
+    opacity: .99;
+    z-index: -1;
+}
+
+.main {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    border: 1px solid white;
+    opacity: .99;
+    z-index: -1;
+    color: #fff
+}
+
+p.solid {
+    border-style: solid;
+}
+
+.mapimage {
+    position: relative;
+    margin-left: 50px;
+    margin-right: 70px;
+    border: 5px solid black;
+    width: 500px;
+    height: 500px;
+    z-index: -2;
+}
+
+#areachat:focus {
+    background-color: aqua;
+}
+
+#voicechat:focus {
+    background-color: aqua;
+}
+
+#gunshots:focus {
+    background-color: aqua;
+}
+
+#areachat:focus {
+    background-color: aqua;
+}
+
+#tinymap:focus {
+    background-color: #00ff00;
+}
+
+#smallmap:focus {
+    background-color: #00ff00;
+}
+
+#mediummap:focus {
+    background-color: #00ff00;
+}
+
+#largemap:focus {
+    background-color: #00ff00;
+}

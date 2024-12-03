@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="../static/favicon.ico" type="image/x-icon"> {% block meta %} {% endblock %}
+    <div class="title">
+        <title>{% block title %}{% endblock %}</title>
+    </div>
+    {% block css %} {% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="{{ url_for('home') }}">KriVez</a>
+        <nav>
+            <a href="{{ url_for('about') }}">About</a>
+            <div class="dropdown">
+                <button class="dropbtn">Projects <img src="https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png" alt="Arrow Down"></button>
+                <div class="dropdown-content">
+                    <a href="{{ url_for('adventslys') }}">Adventslys</a>
+                    <a href="#">Project 2</a>
+                    <a href="#">Project 3</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        {% block content %} {% endblock %}
+    </div>
+    <footer>
+      © 2024 KriVez.com using Flask
+    </footer>
+</body>
+
+</html>

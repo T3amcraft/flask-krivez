@@ -1,0 +1,18 @@
+{% extends "layout.html" %} {% block title %}T3amcraft | Minecraft{% endblock %}{% block meta %}
+<meta charset="UTF-8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="T3amcraft" />
+<meta property="og:description" content="This is T3amcrafts website, come check it out." />
+<meta property="og:url" content="http://t3amcraft.xyz/minecraft" />
+<meta property="og:image" content="/static/LogoSite.jpg" />{% endblock %} {% block content %}
+<div class="about">
+    <h1 align=center>Minecraft</h1>
+    <h3 align=center>{{ text }}</h3>
+    <p>Minecraft Server IP: play.krivez.com</p>
+test
+    <p>Access to Dynmap:</p>
+    <a href="/" onclick="javascript:event.target.port=8123">Dynmap</a>
+    <br>
+    <a href="https://dynmap.krivez.com"> if above doesn't work</a>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %} {% block title %}T3amcraft | Pictures{% endblock %} {% block meta %}
+<meta charset="UTF-8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="T3amcraft | Pictures" />
+<meta property="og:description" content="This is T3amcrafts website, come check it out." />
+<meta property="og:url" content="http://t3amcraft.xyz/pictures" />
+<meta property="og:image" content="/static/LogoSite.jpg" />{% endblock %}{% block content %}
+<div class="pictures">
+    <h1 align=center>Pictures</h1>
+    <p>Here you can view different pictures, videos and files.</p>
+    <video width="533" height="300" controls>
+    <source src="../static/BananaGun.mp4" type="video/mp4"> 
+    Video is not supported by your browser
+  </video>
+    <p>Taken from <a href="https://www.youtube.com/watch?v=Cx6-n0SHdGQ" target="_blank">a slimecicle video.</a></p>
+</div>
+{% endblock %}

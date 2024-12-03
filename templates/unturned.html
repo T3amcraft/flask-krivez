@@ -1,0 +1,27 @@
+{% extends "layout.html" %} {% block title %}T3amcraft | Unturned{% endblock %}{% block meta %}
+<meta charset="UTF-8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="T3amcraft | Unturned" />
+<meta property="og:description" content="This is T3amcrafts website, come check it out." />
+<meta property="og:url" content="http://t3amcraft.xyz/unturned" />
+<meta property="og:image" content="/static/LogoSite.jpg" />{% endblock %} {% block content %}
+<div class="Unturned">
+    <h1 align=center>Unturned</h1>
+    <br /><br />
+    <h3>Check out my Range for Area and Voice chat in Unturned:</h3>
+    <div id="textbox">
+        <h4 class="alignleft"><a href="{{ url_for('range') }}">Unturned Voice and Area Range</a></h4>
+        <h4 class="alignright">Updates (Full update list on the website):<br /> - Fixed Circle so it doesn't click outside the map. <br /> - Fixed ---<br /> x.x.2020
+        </h4>
+    </div>
+    <br /><br /><br />
+    <h3>Learn about different Unturned hosting tips.</h3>
+    <div class="unturnedbox">
+        <p>
+            Lose_Skills = 0.0 (Lose all Skills)<br /> Lose_Skills = 1.0 (Keep all Skills)<br />
+            <br /> Lose_Items = 0.0 (Keep all Items)<br /> Lose_Items = 1.0 (Lose all Items)<br />
+            <br /> Priority = 1 (Highest/Lowest Priority)<br /> Priority = 100 (Highest/Lowest Priority)<br />
+        </p>
+    </div>
+</div>
+{% endblock %}

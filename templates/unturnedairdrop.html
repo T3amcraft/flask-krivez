@@ -1,0 +1,45 @@
+{% extends "layout.html" %} {% block title %}T3amcraft | UnturnedRange{% endblock %} {% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/unturnedairdrop.css') }}">{% endblock %} {% block meta %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="website">
+<meta property="og:title" content="T3amcraft | UnturnedAirdrop" />
+<meta property="og:description" content="This is a tool to see where the airdrop lands on different maps in Unturned." />
+<meta property="og:url" content="http://t3amcraft.xyz/unturned/airdrop" />
+<meta property="og:image" content="/static/LogoSite.jpg" />
+<meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/t3amcraft.public/unturnedmaps/unturnedMediumWashington.png" />{% endblock %} {% block content %}
+<div id="textbox">
+    <h4 class="alignleft">
+        <div class="map-with-text">
+            <img id="map" class="mapimage" align=left src="https://s3.eu-west-2.amazonaws.com/t3amcraft.public/unturnedmaps/unturnedMediumWashington.png" />
+
+        </div>
+    </h4>
+    <p class="alignright">
+        <h2>insert something here</h2>
+        <br /><br /> Choose Map:<br />
+        <button id="tinymap" onclick="mapCanyonArena();">Canyon Arena</button>
+        <button id="smallmap" onclick="mapMonolith();">Monolith</button><br/>
+        <h5>Medium Maps:</h5>
+        <button id="mediummap" onclick="mapWashington();">Washington</button>
+        <button id="mediummap" onclick="mapPEI();">PEI</button>
+        <button id="mediummap" onclick="mapYukon();">Yukon</button><br/>
+        <h5>Large Maps:</h5>
+        <button id="largemap" onclick="mapRussia();">Russia</button>
+        <button id="largemap" onclick="mapWashingtonCounty();">Washington County</button>
+        <button id="largemap" onclick="mapUralMountainsLN();">Ural Mountains LN</button>
+        <br /><br /><br /><br />
+        <strong>
+            New Updates:</strong> (View All the Updates further down)<br /> - Added the airdrop app to this website.<br /> 27.08.2020
+        <br />
+        <br />
+        <strong>To be added:</strong><br /> - More maps.<br /> - Make this page nicer to look at.<br /><br /><strong>
+            All Updates:</strong><br /> - Added the airdrop app to this website.<br /> 27.08.2020
+
+    </p>
+    <br />
+    <p>Made by T3amcraft</p>
+    <!-- Script -->
+    <script type="text/javascript" src="{{ url_for('static', filename='unturnedrange2.js') }}"></script>
+</div>
+{% endblock %}
